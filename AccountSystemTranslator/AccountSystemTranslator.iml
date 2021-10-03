@@ -10,5 +10,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: za.ac.nwu.as:AccountSystemDomain:unknown" level="project" />
+    <orderEntry type="library" name="Maven: za.ac.nwu.as:AccountSystemRepository:1.0-SNAPSHOT" level="project" />
   </component>
 </module>

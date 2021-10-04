@@ -7,7 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AccountSystem" />
+        <module name="AccountSystemTranslator" />
+        <module name="AccountSystemDomain" />
+        <module name="AccountSystemLogic" />
+        <module name="AccountSystemWeb" />
+        <module name="AccountSystemWebSpringBoot" />
+        <module name="AccountSystemRepository" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AccountSystemDomain" target="15" />
+      <module name="AccountSystemLogic" target="15" />
+      <module name="AccountSystemProject" target="15" />
+      <module name="AccountSystemRepository" target="15" />
+      <module name="AccountSystemTranslator" target="15" />
+      <module name="AccountSystemWeb" target="15" />
+      <module name="AccountSystemWebSpringBoot" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

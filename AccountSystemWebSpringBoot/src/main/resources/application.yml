@@ -1,5 +1,5 @@
 server:
-port : 8090
+port : 3306
   swagger.application.name=AccountSystem
   # The @ delimiter is used to get config properties from the POM
   swagger.application.description=@project.description@

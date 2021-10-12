@@ -15,6 +15,18 @@ public class AccountTransaction implements Serializable
     private Long balance;
     private LocalDate creationDate;
 
+    @ManyToOne
+    @JoinColumn(name = "accountType_id")
+    private AccountType accountType_id;
+
+    public AccountType getAccountType_id() {
+        return accountType_id;
+    }
+
+    public void setAccountType_id(AccountType accountType_id) {
+        this.accountType_id = accountType_id;
+    }
+
     public AccountTransaction()
     {
 

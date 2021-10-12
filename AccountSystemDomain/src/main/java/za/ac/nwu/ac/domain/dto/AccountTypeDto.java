@@ -1,11 +1,11 @@
 package za.ac.nwu.ac.domain.dto;
 
-import java.time.LocalDate;
+import java.sql.Date;
 import java.util.Objects;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import za.ac.nwu.ac.domain.persistence.AccountType;
+import za.ac.nwu.ac.domain.persistance.AccountType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
@@ -14,19 +14,24 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class AccountTypeDto {
 
-    private static long serialVersionUID = 4L;
+    private static final long serialVersionUID = 4L;
+    private Date creationDate;
     private String mnemonic;
     private String accountTypeName;
+    private long accountType_id;
 
+    public AccountTypeDto(Date creationDate)
+    {
+        this.creationDate = creationDate;
+    }
     public AccountTypeDto()
     {
+        this.accountTypeName = accountTypeName;
+        this.mnemonic = mnemonic;
+        this.creationDate= Date.valueOf(String.valueOf(creationDate));
 
     }
-    public AccountTypeDto(String mnemonic, String accountTypeName)
-    {
-        this.mnemonic = mnemonic;
-        this.accountTypeName = accountTypeName;
-    }
+
 
 
 
@@ -100,4 +105,19 @@ public class AccountTypeDto {
     }
 
 
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public Object getAccountType_id() {
+        return accountType_id;
+    }
+
+    public void setAccountType_id(long accountType_id) {
+        this.accountType_id = accountType_id;
+    }
+
+    public void setCreationDate() {
+        this.creationDate= creationDate;
+    }
 }

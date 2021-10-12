@@ -1,4 +1,4 @@
-package za.ac.nwu.ac.web.sb.controller;
+package za.ac.nwu.ac.web.sb.exceptions;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
